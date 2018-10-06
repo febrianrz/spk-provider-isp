@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#47a0da"
+    android:background="@color/colorPrimary"
     android:orientation="vertical"
+    android:paddingTop="10dp"
     tools:context=".MainActivity">
 
     <ScrollView
@@ -17,73 +18,32 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView"
+            <ImageView
+                android:id="@+id/imageView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical|center"
-                android:fontFamily="sans-serif-smallcaps"
-                android:gravity="center_vertical|center"
-                android:text="Perbandingan \nHarga ISP"
-                android:textAlignment="center"
-                android:textColor="#000"
-                android:textSize="30sp"
-                android:textStyle="bold" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    app:srcCompat="@mipmap/ic_launcher" />
-
-                <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    app:srcCompat="@mipmap/ic_launcher" />
-
-                <ImageView
-                    android:id="@+id/imageView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    app:srcCompat="@mipmap/ic_launcher" />
-
-                <ImageView
-                    android:id="@+id/imageView4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    app:srcCompat="@mipmap/ic_launcher" />
-            </LinearLayout>
+                android:layout_height="130dp"
+                app:srcCompat="@drawable/header" />
 
             <ImageView
                 android:id="@+id/imgForm"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_marginTop="30dp"
-                app:srcCompat="@drawable/form" />
+                app:srcCompat="@drawable/icn_paket5" />
 
             <ImageView
                 android:id="@+id/imgAbout"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_marginTop="30dp"
-                app:srcCompat="@drawable/about" />
+                app:srcCompat="@drawable/icn_info2" />
 
             <ImageView
                 android:id="@+id/imgExit"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_marginTop="30dp"
-                app:srcCompat="@drawable/exit" />
+                app:srcCompat="@drawable/icn_quit2" />
 
         </LinearLayout>
     </ScrollView>
