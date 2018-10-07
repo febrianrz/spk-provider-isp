@@ -2,7 +2,14 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 27
-
+    signingConfigs {
+        pubetas {
+            keyAlias 'spk-provider'
+            keyPassword '123456'
+            storeFile file('/home/febrian/Documents/keystore/spk-provider.jks')
+            storePassword '123456'
+        }
+    }
     defaultConfig {
         applicationId "alterindonesia.project.com.spkproviderisp"
         minSdkVersion 19
@@ -10,11 +17,13 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.pubetas
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.pubetas
         }
     }
 }
@@ -24,9 +33,13 @@ dependencies {
     //noinspection GradleCompatible
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
-    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.okhttp:okhttp:2.4.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
     implementation 'com.android.support:cardview-v7:27.1.1'
     implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'

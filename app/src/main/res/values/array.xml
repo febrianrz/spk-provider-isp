@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="list_harga">
+        <item>Rp200.000 - Rp300.000</item>
+        <item>Rp300.000 - Rp400.000</item>
+        <item>Rp400.000 - Rp500.000</item>
+        <item>> Rp500.000</item>
+    </array>
+</resources>

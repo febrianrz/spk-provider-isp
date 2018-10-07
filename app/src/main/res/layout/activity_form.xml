@@ -25,6 +25,7 @@
             android:id="@+id/etPrice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:focusableInTouchMode="false"
             android:hint="Budget
 "
             android:inputType="number" />

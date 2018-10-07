@@ -12,4 +12,36 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="gone"></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/llKosong"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvStatusEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Tidak ditemukan rekomendasi yang sesuai "
+            android:textAlignment="center"
+            android:textColor="#fff" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btnList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_orange_dark"
+                android:text="List Paket"
+                android:textColor="#fff" />
+        </RelativeLayout>
+    </LinearLayout>
+
 </LinearLayout>

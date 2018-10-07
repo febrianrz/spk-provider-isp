@@ -15,7 +15,9 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.imgAbout).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, PaketListActivity.class));
+                Intent intent =new Intent(MainActivity.this, PaketListActivity.class);
+                intent.putExtra("type","list_all");
+                startActivity(intent);
             }
         });
 
